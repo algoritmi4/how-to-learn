@@ -12,6 +12,8 @@
   </head>
   <body class="page">
     <header class="header">
+      <!-- Логотип реализован через div, -->
+      <!-- чтобы его можно было повторно использовать в блоке footer --> 
       <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
@@ -25,6 +27,8 @@
         alt="Как учиться"
         title="Проект how-to-study"
       >
+      <!-- Синий квадрат реализован через div, -->
+      <!-- нужный цвет задан в css -->
       <div class="header__square-pic"></div>
     </header>
     <main class="content">
@@ -54,6 +58,8 @@
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учебу и мозг</p>
+        <!-- Таблица создана при помощи списка, -->
+        <!-- каждый блок таблицы - элемент списка -->
         <ul class="table">
           <li class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
@@ -101,6 +107,7 @@
           </li>
         </ul>
       </section>
+      <!-- Фоновое изображение для блока задано в css -->
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
@@ -113,6 +120,8 @@
         <p class="section-subtitle section-subtitle_theme_dark">
           от Джоша Кауфмана
         </p>
+        <!-- Создана таблица с помощью списка, как в блоке digits. -->
+        <!-- Таблицы имеют схожие свойства - добавлены модификаторы -->
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1</h3>
@@ -175,12 +184,14 @@
             </p>
           </li>
         </ul>
+        <!-- Синий треугольник реализован через div и фоновое изображение -->
         <div class="kaufman__triangle"></div>
       </section>
     </main>
     <footer class="footer">
-      <section class="footer__columns">
+      <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
+          <!-- Повторно реализован логотип -->
           <div class="logo logo_place_footer"></div>
           <p class="footer__author">&copy; Иван Буторин</p>
         </div>
@@ -192,6 +203,7 @@
             <li><a class="footer__column-link" href="#">Наставники</a></li>
           </ul>
         </nav>
+        <!-- Иконки соцсетей должны так же быть ссылками, поэтому реализованы через img -->
         <nav class="footer__column footer__column_content_social">
           <h4 class="footer__column-heading">Соцсети</h4>
           <ul class="footer__column-links">
@@ -227,7 +239,7 @@
             </li>
           </ul>
         </nav>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

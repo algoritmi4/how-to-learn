@@ -1,14 +1,12 @@
+/*Заданы ограничения для основной страницы*/
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", "Arial", sans-serif;
 }
-
+/* Задано относительное позиционирование, */
+/* т.к. дочерние блоки будут позиционироваться абсолютно */
 .header {
   height: 100vh;
   min-height: 600px;
@@ -18,7 +16,7 @@
   background-color: #f2f2f2;
   display: flex;
 }
-
+/* Общие свойства для логотипов header и footer */
 .logo {
   width: 228px;
   height: 32px;
@@ -30,46 +28,6 @@
   left: 64px;
   top: 30px;
   background-image: url(../images/logo_place_header.svg);
-}
-
-h1{
-  border: red 1px solid;
-}
-
-p{
-  border: red 1px solid;
-}
-
-ul{
-  border: red 1px solid;
-}
-
-li{
-  border: red 1px solid;
-}
-
-h3{
-  border: red 1px solid;
-}
-
-h4{
-  border: red 1px solid;
-}
-
-h2{
-  border: red 1px solid;
-}
-
-nav{
-  border: red 1px solid;
-}
-
-section{
-  border: red 1px solid;
-}
-
-div{
-  border: red 1px solid;
 }
 
 .header__title {
@@ -108,8 +66,7 @@ div{
   height: 608px;
   z-index: 1;
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+/* Синий квадрат */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -124,7 +81,7 @@ div{
   justify-content: center;
   margin: 100px 0;
 }
-
+/* Блок займет 80% от ширины страницы */
 .two-columns {
   display: flex;
   width: 80%;
@@ -140,7 +97,7 @@ div{
   font-weight: normal;
   color: #2f80ed;
 }
-
+/* Дочерный блок с основным текстом займет 80% от ширины родителя(two-columns) */
 .two-columns__main-text {
   min-width: 784px;
   width: 80%;
@@ -148,18 +105,18 @@ div{
   flex-direction: column;
   justify-content: space-between;
 }
-
+/* Добавлены отступы между абзацами */
 .two-columns__paragraph {
   margin: 0 0 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-
+/* Для последнего абцаза основного текста нижний отступ убран */
 .two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
-
+/* Курсив */
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
@@ -190,7 +147,7 @@ div{
   text-align: center;
   margin: 0;
 }
-
+/* Основные свойства для двух таблиц(блок digits и блок kaufman) */
 .table {
   width: 1100px;
   display: flex;
@@ -212,18 +169,18 @@ div{
   font-size: 24px;
   font-weight: 600;
 }
-
+/* Добавлен нижний отступ для абзацев в ячейках */
 .table__text {
   margin: 0 0 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
-
+/* Для последнего абзаца в каждой ячейке убран нижний отступ */
 .table__text:last-child {
   margin: 0;
 }
-
+/* Задано фоновое изображение */
 .feynman {
   min-height: 890px;
   box-sizing: border-box;
@@ -275,7 +232,7 @@ div{
   position: relative;
   overflow: hidden;
 }
-
+/* Синий треугольник */
 .kaufman__triangle {
   position: absolute;
   background-image: url(../images/kaufman-triangle.svg);
@@ -293,12 +250,11 @@ div{
 .section-subtitle_theme_dark {
   z-index: 2;
 }
-
+/* Модификаторы для второй таблицы(блок kaufman) */
 .table_theme_dark {
   z-index: 2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .table__cell_theme_dark {
   color: white;
   width: 200px;
@@ -325,7 +281,7 @@ div{
   width: 90%;
   justify-content: space-between;
 }
-
+/* Колонки путь занимают всю высоту родительского блока */
 .footer__column {
   height: 100%;
   box-sizing: border-box;
@@ -374,7 +330,8 @@ div{
   text-decoration: none;
   color: white;
 }
-
+/* Иконки соцсетей выровнены на уровень с текстом */
+/* с помощью относительного позиционирования */
 .footer__social-icon {
   margin: 0 10px 0 0;
   width: 16px;
@@ -382,3 +339,4 @@ div{
   position: relative;
   top: 2px;
 }
+/* Ревьюер <3 */
