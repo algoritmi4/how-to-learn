@@ -1,0 +1,8 @@
+/* Дочерный блок с основным текстом займет 80% от ширины родителя(two-columns) */
+.two-columns__main-text {
+  min-width: 784px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+/* Добавлен нижний отступ для абзацев в ячейках */
+.table__text {
+  margin: 0 0 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+/* Для последнего абзаца в каждой ячейке убран нижний отступ */
+.table__text:last-child {
+  margin: 0;
+}

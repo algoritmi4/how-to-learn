@@ -1,0 +1,9 @@
+/*Отрицательный отступ добавлен, чтобы расположить*/
+/*видео из верхнего блока поверх этого блока*/
+.oakley {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 160px 0 0;
+  margin: -50px 0 0;
+}

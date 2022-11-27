@@ -1,0 +1,9 @@
+/* Иконки соцсетей выровнены на уровень с текстом */
+/* с помощью относительного позиционирования */
+.footer__social-icon {
+  margin: 0 10px 0 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+}

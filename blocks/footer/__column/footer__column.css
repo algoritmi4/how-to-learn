@@ -1,0 +1,5 @@
+/* Колонки путь занимают всю высоту родительского блока */
+.footer__column {
+  height: 100%;
+  box-sizing: border-box;
+}

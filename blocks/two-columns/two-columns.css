@@ -1,0 +1,6 @@
+/* Блок займет 80% от ширины страницы */
+.two-columns {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}

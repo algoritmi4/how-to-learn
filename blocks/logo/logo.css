@@ -1,0 +1,6 @@
+/* Общие свойства для логотипов header и footer */
+.logo {
+  width: 228px;
+  height: 32px;
+  z-index: 5;
+}
