@@ -28,7 +28,7 @@
       >
       <!-- Синий квадрат реализован через div, -->
       <!-- нужный цвет задан в css -->
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
       <section class="description">
@@ -133,8 +133,6 @@
         <div class="video__iframes">
           <iframe
             class="video__iframe"
-            width="515"
-            height="316"
             src="https://www.youtube.com/embed/arj7oStGLkU"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -142,8 +140,6 @@
           ></iframe>
           <iframe
             class="video__iframe"
-            width="515"
-            height="316"
             src="https://www.youtube.com/embed/5MgBikgcWnY"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -229,14 +225,14 @@
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">
+          <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов
             студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
             всем, кто занимается образованием — так учащиеся повсюду смогут
             получить навыки и знания, которые приносят успех в школе, карьере и
             жизни.
-          </p>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          </blockquote>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img
@@ -321,14 +317,14 @@
           </li>
         </ul>
         <!-- Синий треугольник реализован через div и фоновое изображение -->
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
       </section>
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">
           Больше материалов о техниках и лайфхаках обучения
         </p>
-        <nav class="resources__logo-zone">
+        <div class="resources__logo-zone">
           <!-- Изображения обернуты в ссылки -->
           <!-- С помощью css добавлена интерактивность -->
           <a class="resources__link" href="#">
@@ -359,7 +355,7 @@
               alt="логотип полка"
             >
           </a>
-        </nav>
+        </div>
       </section>
     </main>
     <footer class="footer">
