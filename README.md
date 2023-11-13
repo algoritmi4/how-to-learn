@@ -9,4 +9,5 @@
 - CSS
 - Flex
 
-gh-pages: https://algoritmi4.github.io/how-to-learn/
+## Ссылка на gh-pages
+https://algoritmi4.github.io/how-to-learn/
